@@ -1,8 +1,5 @@
 import java.awt.EventQueue;
-import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.IOException;
 
@@ -15,9 +12,6 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import java.awt.Color;
 import java.awt.Toolkit;
-import javax.swing.border.LineBorder;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 
 public class MainWindow {
 
