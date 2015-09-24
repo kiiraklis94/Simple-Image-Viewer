@@ -61,20 +61,21 @@ public class MainWindow {
 		int imgHeight = img.getWidth();
 		
 		frame1 = new JFrame();
+		
 		frame1.setIconImage(Toolkit.getDefaultToolkit().getImage(MainWindow.class.getResource("/Icon/gifLogo.png")));
 		frame1.getContentPane().setBackground(Color.WHITE);
 		frame1.setTitle(imageLocation);
 		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame1.getContentPane().setLayout(new BorderLayout(0, 0));
 		frame1.setBounds(200, 200, imgWidth+18, imgHeight+40);
-		
+
 		JLabel imgLabel = new JLabel("");
 		imgLabel.setToolTipText(imageLocation);
 		imgLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		imgLabel.setIcon(new ImageIcon(imageLocation));
 		imgLabel.setBounds(0, 0, frame1.getWidth(), frame1.getWidth());
 		frame1.getContentPane().add(imgLabel);
-		
+		frame1.setLocationRelativeTo(null);
 		
 		
 	}
